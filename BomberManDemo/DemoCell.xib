@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="453" id="KGk-i7-Jjw" customClass="DemoCell" customModule="BomberManDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="537" height="400"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="537" height="399.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fZ3-U7-ZiU">
+                        <rect key="frame" x="140" y="57" width="256" height="159"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="159" id="3if-7M-jJt"/>
+                            <constraint firstAttribute="width" constant="256" id="VU9-Fw-5VN"/>
+                        </constraints>
+                    </imageView>
+                    <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ep-dl-urB">
+                        <rect key="frame" x="8" y="224" width="521" height="168"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mfd-gP-6dZ">
+                        <rect key="frame" x="8" y="8" width="521" height="42"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="42" id="FLS-F3-h8Z"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="fZ3-U7-ZiU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="49" id="3Tr-M8-7bB"/>
+                    <constraint firstItem="6Ep-dl-urB" firstAttribute="top" secondItem="fZ3-U7-ZiU" secondAttribute="bottom" constant="8" symbolic="YES" id="A56-TN-tG7"/>
+                    <constraint firstItem="Mfd-gP-6dZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="JVJ-Fo-JWT"/>
+                    <constraint firstItem="fZ3-U7-ZiU" firstAttribute="centerX" secondItem="6Ep-dl-urB" secondAttribute="centerX" id="Osk-nd-0Kp"/>
+                    <constraint firstItem="6Ep-dl-urB" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="XPG-k7-ks7"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="6Ep-dl-urB" secondAttribute="bottom" constant="-0.5" id="g3e-UR-Da8"/>
+                    <constraint firstItem="6Ep-dl-urB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="ocb-Aa-5XS"/>
+                    <constraint firstItem="Mfd-gP-6dZ" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="tQ5-4E-CKZ"/>
+                    <constraint firstItem="Mfd-gP-6dZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="zqT-AV-7No"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="demoImage" destination="fZ3-U7-ZiU" id="uhZ-QM-Geq"/>
+                <outlet property="demoText" destination="6Ep-dl-urB" id="CoG-ha-16F"/>
+                <outlet property="title" destination="Mfd-gP-6dZ" id="mIj-2e-Njr"/>
+            </connections>
+            <point key="canvasLocation" x="349.5" y="541"/>
+        </tableViewCell>
+    </objects>
+</document>
